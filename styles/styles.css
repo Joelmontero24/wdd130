@@ -2,6 +2,33 @@ main {
     max-width: 840px;
 }
 
+nav {
+    background-color: darkblue;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    display: block;
+    padding: 20px;
+}
+
+h1 {
+    color: steelblue;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 0 10px gray;
+}
+
+p {
+    padding: 0;
+}
+
 aside {
     width: 20rem;
     margin: 1rem;
@@ -15,41 +42,6 @@ aside {
 aside img {
     width: 200px;
     height: auto;
-}
-
-header {
-    background-color: steelblue;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    font-size: 1.5rem;
-}
-
-nav {
-    background-color: darkblue;
-    padding: 10px;
-}
-
-nav a {
-    color: white;
-    display: block;
-    padding: 20px;
-}
-
-p {
-    padding: 0;
-}
-
-h1 {
-    color: steelblue;
-}
-
-main img {
-    width: 150px;
-    height: auto;
-    border: 1px solid steelblue;
-    padding: 2px;
-    box-shadow: 0 0 0 10px gray;
 }
 
 footer {
