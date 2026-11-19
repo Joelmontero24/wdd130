@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #115c01;
-    --secondary-color: #f4a261;
+    --primary-color: #90a18c;
+    --secondary-color: hsl(27, 41%, 76%);
     --accent1-color: #264653;
     --accent2-color: #e9c4e9;
     --heading-font: "Times New Roman" "Georgia", serif;
@@ -13,7 +13,6 @@ header {
 }
 
 * {
-
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -29,7 +28,6 @@ main,
 footer {
     width: 840x;
     margin: 0 auto;
-
 }
 
 h1,
