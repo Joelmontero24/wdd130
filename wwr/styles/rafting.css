@@ -25,7 +25,7 @@ body {
 header,
 main,
 footer {
-    width: 840x;
+    width: 840px;
     margin: 0 auto;
 }
 
@@ -75,4 +75,9 @@ article {
     right: 20px;
     padding: 16px;
     background-color: var(--primary-color);
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
 }
