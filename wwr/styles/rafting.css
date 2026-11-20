@@ -1,9 +1,8 @@
 :root {
     --primary-color: #90a18c;
-    --secondary-color: hsl(27, 41%, 76%);
     --accent1-color: #264653;
     --accent2-color: #e9c4e9;
-    --heading-font: "Times New Roman" "Georgia", serif;
+    --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
 
@@ -76,4 +75,11 @@ article {
     right: 20px;
     padding: 16px;
     background-color: var(--primary-color);
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 1rem;
+
 }
