@@ -76,10 +76,3 @@ article {
     padding: 16px;
     background-color: var(--primary-color);
 }
-
-.hero article img {
-    float: right;
-    width: 125px;
-    margin-left: 1rem;
-
-}
