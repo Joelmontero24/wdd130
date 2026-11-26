@@ -31,7 +31,6 @@ footer {
   margin: 0 auto;
 }
 
-/* Header: CSS Grid */
 header {
   display: grid;
   grid-template-columns: auto auto 1fr;
@@ -54,7 +53,6 @@ header img {
   color: var(--primary-color);
 }
 
-/* Nav: CSS Flex */
 header nav {
   display: flex;
   justify-content: flex-end;
@@ -95,7 +93,7 @@ p {
   text-decoration: none;
 }
 
-/* Hero Section */
+
 .hero {
   position: relative;
   margin-top: 1.5rem;
@@ -147,7 +145,6 @@ p {
   font-size: 0.95rem;
 }
 
-/* History Section */
 .history {
   margin-top: 1.5rem;
   padding: 1.5rem;
@@ -187,7 +184,7 @@ p {
   margin-bottom: 0;
 }
 
-/* Adventures Section */
+
 .adventures {
   margin-top: 1.5rem;
   padding: 1.5rem;
@@ -224,7 +221,7 @@ p {
   color: var(--muted-text);
 }
 
-/* Footer */
+
 footer {
   margin-top: 1.5rem;
   padding: 1rem 1.5rem;
