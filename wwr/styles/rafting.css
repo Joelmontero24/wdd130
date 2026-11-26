@@ -141,16 +141,6 @@ article {
 
 
 .history {
-  display: grid;
-  grid-template-columns: 1fr 220px 1fr;
-  gap: 1.5rem;
-  align-items: center;
-  padding: 1.5rem;
-  margin: 1.5rem 0;
-  border: 1px solid #ccc; /* optional subtle border matching wireframe */
-}
-
-.history {
   margin-top: 1.5rem;
   padding: 1.5rem;
   background-color: #f4f1f8;
