@@ -5,63 +5,15 @@
   --text-color: #111111;
   --muted-text: #4b4453;
   --border-color: #2b1e5a;
+  --heading-font: Arial, Helvetica, sans-serif;
 }
 
-header {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: center;
-  gap: 1.5rem;
-  padding: 1rem 1.5rem;
-  background-color: var(--accent-color);
-}
-
-header img {
-  width: 96px;
-  height: 96px;
-  object-fit: cover;
-  display: block;
-}
-
-header nav {
-  display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-}
-
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-header nav a {
-  text-decoration: none;
-  color: var(--text-color);
-  background-color: var(--surface-color);
-  border: 1px solid var(--border-color);
-  padding: 0.6rem 1.25rem;
-  margin-left: -1px; /* collapses shared borders like wireframe */
-  font-weight: 600;
-}
-
-
-header nav a:first-child {
-  margin-left: 0;
-}
-
-header nav a:hover {
-  background-color: var(--primary-color);
-  color: var(--surface-color);
-}
-
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -74,46 +26,97 @@ body {
 header,
 main,
 footer {
-    width: 840px;
-    margin: 0 auto;
+  max-width: 840px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Header: CSS Grid */
+header {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background-color: var(--accent-color);
+}
+
+header img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  display: block;
+}
+
+#logo {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--primary-color);
+}
+
+/* Nav: CSS Flex */
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  padding: 0.55rem 1.1rem;
+  margin-left: -1px;
+  font-weight: 600;
+}
+
+header nav a:first-child {
+  margin-left: 0;
+}
+
+header nav a:hover {
+  background-color: var(--primary-color);
+  color: var(--surface-color);
 }
 
 h1,
 h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
+  font-family: var(--heading-font);
+  color: var(--primary-color);
 }
 
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
+p {
+  margin-bottom: 0.75rem;
 }
 
 .socialmedia a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
+/* Hero Section */
 .hero {
   position: relative;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   border: 1px solid var(--border-color);
   overflow: hidden;
+  min-height: 340px;
 }
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+
+.hero > img {
+  display: block;
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  opacity: 0.35;
 }
 
 .hero h1 {
   position: absolute;
   top: 1.25rem;
-  left: 0;
-  right: 0;
+  left: 1rem;
+  right: 1rem;
   text-align: center;
   font-size: 2rem;
   color: var(--text-color);
@@ -123,10 +126,10 @@ article {
   position: absolute;
   left: 2rem;
   right: 2rem;
-  bottom: 2rem;
+  bottom: 1.5rem;
   display: flow-root;
   padding: 1rem 1.25rem;
-  background-color: rgba(255, 255, 255, 0.92);
+  background-color: rgba(255, 255, 255, 0.94);
   border: 1px solid var(--border-color);
 }
 
@@ -136,9 +139,15 @@ article {
   height: 85px;
   object-fit: cover;
   margin-left: 1rem;
+  margin-bottom: 0.5rem;
 }
 
+.hero article p {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
 
+/* History Section */
 .history {
   margin-top: 1.5rem;
   padding: 1.5rem;
@@ -161,6 +170,7 @@ article {
 .history p:first-of-type {
   grid-area: left;
   font-size: 0.95rem;
+  margin-bottom: 0;
 }
 
 .history img {
@@ -174,8 +184,10 @@ article {
 .history p:last-of-type {
   grid-area: right;
   font-size: 0.95rem;
+  margin-bottom: 0;
 }
 
+/* Adventures Section */
 .adventures {
   margin-top: 1.5rem;
   padding: 1.5rem;
@@ -211,6 +223,8 @@ article {
   font-size: 0.9rem;
   color: var(--muted-text);
 }
+
+/* Footer */
 footer {
   margin-top: 1.5rem;
   padding: 1rem 1.5rem;
@@ -224,6 +238,7 @@ footer {
 footer p {
   text-align: center;
   font-weight: 600;
+  margin-bottom: 0;
 }
 
 .socialmedia {
